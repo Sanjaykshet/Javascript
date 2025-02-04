@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>variables</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div>
+        <h3>Cart quantity</h3>
+        <button class="totalQuantity" onclick="show()" ;>Show CartQuantity</button>
+        <button class="additems" onclick="additemtocart()" ;>Add to cart</button>
+        <!-- <button class="add1" onclick="addOneitem()" ;>+1</button> -->
+        <button class="add2" onclick="addtwoitem()" ;>+2</button>
+        <button class="add2" onclick="addthreeitem()" ;>+3</button>
+        <!-- <button class="add4" onclick="addfouritem()" ;>+4</button> -->
+        <!-- <button class="add5" onclick="addfiveitem()" ;>+5</button> -->
+        <!-- <button class="remove" onclick="removeitem()" ;>Remove</button>
+        <button class="remove2" onclick="removetwoitem()" ;>-2</button>
+        <button class="remove3" onclick="removethreeitem()" ;>-3</button> -->
+        <button class="clear" onclick="reset()" ;>Reset</button>
+    </div>
+    <script>
+
+        let cartQuantity = 0;
+        function show() {
+            console.log('Cart Quantity :', cartQuantity);
+        }
+        function additemtocart() {
+            if (cartQuantity+1 <= 10) {
+                cartQuantity++;
+                console.log('Cart Quantity :', cartQuantity);
+            }
+            else {
+                console.log("cart is full");
+            }
+        }
+        
+        // function addOneitem() {
+        //     if (cartQuantity+1 <= 10) {
+        //         cartQuantity = cartQuantity + 1;
+        //         console.log('Cart Quantity :', cartQuantity);
+        //     }
+        //     else {
+        //         console.log("cart is full");
+        //     }
+        // }
+        function addtwoitem() {
+            if (cartQuantity+2 <= 10) {
+                cartQuantity = cartQuantity + 2;
+                console.log('Cart Quantity :', cartQuantity);
+
+            } else {
+                console.log("cart is full");
+            }
+        }
+        function addthreeitem() {
+            if (cartQuantity+3 <= 10) {
+                cartQuantity = cartQuantity + 3;
+                console.log('Cart Quantity :', cartQuantity);
+
+            } else {
+                console.log("cart is full");
+            }
+        }
+        // function addfouritem() {
+        //     if (cartQuantity+4 <= 10) {
+        //         cartQuantity = cartQuantity + 4;
+        //         console.log('Cart Quantity :', cartQuantity);
+
+        //     } else {
+        //         console.log("cart is full");
+        //     }
+        // }
+        // function addfiveitem() {
+        //     if (cartQuantity+5 <= 10) {
+        //         cartQuantity = cartQuantity + 5;
+        //         console.log('Cart Quantity :', cartQuantity);
+
+        //     } else {
+        //         console.log("cart is full");
+        //     }
+        // }
+        // -----------------------
+
+        // function removeitem() {
+        //     if (cartQuantity-1 <= 0) {
+        //         console.log("cart is already empty!");
+        //     }
+        //     else {
+        //         cartQuantity--
+        //         console.log("item is been removed from the cart ..");
+        //         console.log("Cart Quantity : ", cartQuantity);
+        //     }
+        // }
+        // function removetwoitem() {
+        //     if (cartQuantity-2 <= 0) {
+        //         console.log("cart is already empty!");
+        //     }
+        //     else {
+        //         cartQuantity = cartQuantity - 2;
+        //         console.log(" two items are been removed from the cart ..");
+        //         console.log("Cart Quantity : ", cartQuantity);
+        //     }
+        // }
+        // function removethreeitem() {
+        //     if (cartQuantity-3 <= 0) {
+        //         console.log("cart is already empty!");
+        //     }
+        //     else {
+        //         cartQuantity = cartQuantity - 3;
+        //         console.log("three items are been removed from the cart ..");
+        //         console.log("Cart Quantity : ", cartQuantity);
+        //     }
+        // }
+        function reset() {
+            if (cartQuantity <= 0) {
+                console.log("cart is already empty!");
+            }
+            else {
+                cartQuantity = 0
+                console.log("Cart Quantity : ", cartQuantity);
+                console.log("cart is cleared ..");
+            }
+        }
+        /*
+        let name = "sanjay";
+        console.log(`my name is ${name}`);
+        const cost = ((1*5)+(2*3)+(1*9));
+        console.log(`cost is $${cost}`);
+        const taxvalue = cost*0.1;
+        console.log(`cost is $${taxvalue}`);
+        let totalcost = cost+taxvalue;
+        console.log(`total cost is: $${totalcost}`);
+        */
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>
