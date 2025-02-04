@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button>
+        hello
+    </button>
+    <script>
+        /*
+        document.body.innerText = 'hello';
+        console.log(document.body.innerText);
+        */
+        /*
+        document.title = 'hello-world';
+        console.log(document.body);
+        console.log(document.body.innerHTML);
+        document.body.innerHTML = 'hello world'
+        console.log(document.body.innerHTML);
+        document.body.innerHTML = '<button>hello world</button>'
+        */
+
+        console.log(document.querySelector('button'));
+        console.log(document.querySelector('button').innerHTML);
+        console.log(document.querySelector('button').innerText);
+        document.querySelector('button').innerText = 'changed';
+    </script>
+</body>
+</html>

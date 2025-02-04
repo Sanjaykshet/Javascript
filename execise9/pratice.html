@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>projects</title>
+</head>
+<body>
+    <p>Youtube Subscribe Button</p>
+    <button onclick="sub();" class="Subscribe-button" style="cursor: pointer;">Subscribe</button>
+    <p>Amazon shopping calculator</p>
+    <div>
+        <p>Orders under $40 = +$10 shipping.</p>
+        <p>Orders over $40 = FREE shipping.</p>
+        <input type="text" class="numclass" placeholder="Cost of order" onkeydown="keypress();">
+        <button onclick="calculate();">Calculate</button>
+    </div>
+        <span id="js-calculate-result"></span>
+    <script>
+
+        String('34');
+        console.log('43'-8);
+        function sub(){
+            const buttonelement = document.querySelector('.Subscribe-button');
+            if(buttonelement.innerText === 'Subscribe'){
+                buttonelement.innerText = 'Subscribed';
+                buttonelement.classList.add('js-subscribed');
+                buttonelement.classList.remove('js-subscribe');
+                // classlist is an object
+            }
+            else{
+                buttonelement.innerText = 'Subscribe';
+                buttonelement.classList.add('js-subscribe');
+                buttonelement.classList.remove('js-subscribed');
+            }
+        }
+        function calculate(){
+            let value = parseInt(document.querySelector('.numclass').value) ;
+            // console.log(value);
+            if(value > 40){
+                document.querySelector('#js-calculate-result').innerHTML  = `$${value}`;
+            }
+            else{
+                document.querySelector('#js-calculate-result').innerHTML  = `$${value+10}`;
+            }
+
+        }
+        function keypress(){
+            console.log(event.key);
+            if(event.key === 'Enter'){
+                calculate();
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>objects</title>
+</head>
+<body>
+    <script>
+        const products = {
+            name:'soap',
+            price:'$23'
+        };
+        console.log(products);
+        products.discount = '10%';
+        console.log(products);
+        console.log(products.name);
+        console.log(products["price"]);
+        console.log(products.discount);        
+/*
+        const object = {
+            name : 'sanjay',
+            "date-of-birth":jf,
+            address:{
+                place:sirsi,
+                state:karnataka
+            },
+            fun:function func(){
+                jaskfj;
+            }
+        }
+            object.fun();
+*/
+
+/*
+        const object = {
+            name : 'sanjay',
+            "date-of-birth":jf,
+            address:{
+                place:sirsi,
+                state:karnataka
+            },
+            fun:function func(){
+                jaskfj;
+            }
+        }
+        object.fun();
+            value = JSON.stringify(object) ;convetjsobjecttostirngs
+            JSON.parse(value);reverse of stringify
+
+*/
+        const college = {
+            name:'sdmcet',
+            place:'dharwad',
+            address :{
+                'permanent-address':"dhavalagiri,Dhawad",
+                'local-address':"dharwad"
+            },
+            fun:function func(){
+                console.log('hello');
+            }
+        };
+        console.log(college.address['permanent-address']);
+        console.log(college.address['local-address']);
+        college.fun();
+
+        
+
+        
+        /*
+        //json objects 
+        console.log(JSON.stringify(college)); //converts javascript objects to strings
+        console.log(typeof JSON.stringify(college)); 
+        
+        const jsonstring = JSON.stringify(college);
+        console.log(JSON.parse(jsonstring));
+        
+        
+        // use of local storage - data is not deleted permanentely,it stores only string
+        localStorage.setItem('message','sanjay');
+        console.log(localStorage.getItem('message'));
+        */
+       
+        console.log('hello'.length);  //property
+        console.log('sanjay'.toUpperCase());  //method
+        console.log('value'.toLowerCase());
+
+        // destructuring
+        const object4 = {
+            message:'hello',
+            age:23,
+            value:'538jf'
+        };
+        // const message = object4.message;
+        const {message,age,value} = object4;
+        console.log(message);
+        console.log(age);
+        console.log(value);
+
+        
+
+    </script>
+</body>
+</html>
