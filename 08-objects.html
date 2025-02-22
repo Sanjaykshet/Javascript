@@ -9,14 +9,60 @@
     
 </body>
 <script>
+    /*
     const details = {
         key1 :"value1",
         key2 :"value2",
         key3 :"value3",
+        nestedobjects:{
+            no1:"v1",
+            no2:"v2",
+            no3:"v3",
+        },
+        fun: function fnmae(){
+            console.log("sanjay")
+        }
     }
     console.log(details.key1);
-
+    console.log(details['key1']);
+    console.log(details.nestedobjects.no1);
+    details.fun();
     details.key4 = "value4"; // add new value to object
     delete details.key4; // deletes the value
+
+
+    console.log(JSON.stringify(details));
+    const obj=JSON.stringify(details)
+    console.log(JSON.parse(obj));
+
+    localStorage.setItem("message",'sanjay');
+    console.log(localStorage.getItem('message'));
+    */
+
+
+   console.log('hello'.length);
+   console.log('hello'.toUpperCase());
+
+//    objects are just references,using const we call still change the value of an object
+
+    const obj4 = {
+        message:'danjay',
+        value :90
+    }
+    // const message = obj4.message;
+    // or make use of destructuring
+    const {message,value} = obj4;
+    console.log(message,value)
+
+
+    const obj5 = {
+        message :message,
+        value, //shorthand property
+        method(){// shorthand method
+            console.log('hi')
+        }
+    };
+    console.log(obj5.message)
+    console.log(obj5)
 </script>
 </html>

@@ -12,7 +12,7 @@
     <div>
         <p>Orders under $40 = +$10 shipping.</p>
         <p>Orders over $40 = FREE shipping.</p>
-        <input type="text" class="numclass" placeholder="Cost of order" onkeydown="keypress();">
+        <input type="text" class="numclass" placeholder="Cost of order" onkeydown="keypress(event);">
         <button onclick="calculate();">Calculate</button>
     </div>
         <span id="js-calculate-result"></span>
@@ -45,7 +45,8 @@
             }
 
         }
-        function keypress(){
+        // use of different enent listerners
+        function keypress(event){
             console.log(event.key);
             if(event.key === 'Enter'){
                 calculate();

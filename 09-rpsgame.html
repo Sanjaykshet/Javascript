@@ -16,12 +16,13 @@
             <button onclick="playGame('scissor');">Scissor</button>
         </p>
         <p class="js-result"></p>
+        <p class="js-moves"></p>
         <button onclick="reset();">Reset score</button>
     </div>
     <script>
         let score=JSON.parse( localStorage.getItem('score'));
         let displayers = document.querySelector('.js-result');
-        
+        let res = document.querySelector('.js-moves');
         
         if (!score){
             score = {
@@ -106,9 +107,7 @@
                 score.ties+=1;
             }
             displayers.innerHTML = `Wins:${score.wins}\n Losses:${score.losses} \n Ties:${score.ties}`;
-            alert(`You pick ${playerchoise},Computer pick ${computerChoise} , Result is ${result}\n Wins:${score.wins}\n Losses:${score.losses} \n Ties:${score.ties}`);
-
-
+            res.innerText = `You pick ${playerchoise} , Computer pick ${computerChoise} , Result is ${result}\n `;
             localStorage.setItem('score',JSON.stringify(score));
         }
         function reset(){
