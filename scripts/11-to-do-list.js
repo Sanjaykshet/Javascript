@@ -1,11 +1,11 @@
 let listarray = [
     {
     name: "bring books",
-    date: '4-9-2004'
+    duedate: '4-9-2004'
 },
  {
     name: "wash clothes",
-    date: '3-5-2007'
+    duedate: '3-5-2007'
 },
 
     
@@ -16,7 +16,7 @@ function additemstolist() {
    
     listarray.push({
         name:inputname,
-        date:inputdate
+        duedate:inputdate
     });
     console.log(listarray);
     /*
@@ -33,7 +33,8 @@ function updatetodo() {
     for (let i = 0; i < listarray.length; i++) {
         const objectvalue = listarray[i];
         const name = objectvalue.name;
-        const date = objectvalue.date;
+        const date = objectvalue.duedate;
+        console.log(date);
         // const{name,date} = objectvalue;
         const html = `
         <p>
@@ -46,18 +47,3 @@ function updatetodo() {
     }
     document.querySelector('.display-result').innerHTML = todolisthtml;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

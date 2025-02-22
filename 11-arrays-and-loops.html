@@ -8,6 +8,7 @@
 <body>
     <script>
         myarray = [12,34,56,67];
+        myarray1 = [12,34,56,67,{ key :"value"}];
         console.log(myarray.length);
         myarray.splice(2,1);
         console.log(myarray);
@@ -17,7 +18,7 @@
 
         const array1 = [1,2,3];
         const array2 = array1;
-        const array3 = array1.slice();
+        const array3 = array1.slice(); // index ,how many numbers
         array3.push(4);
         console.log(array3);
         const [fv,sv,th] = [23,34,45];
