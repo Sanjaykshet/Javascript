@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <button class="js-button">click</button>
+    <script>
+        const buttonelement=document.querySelector('.js-button');
+        const method = ()=>{
+            console.log('click');
+        }
+        buttonelement.addEventListener('click',method);
+        buttonelement.removeEventListener('click',method)
+        /*
+        const fn1 = function fname(){
+        console.log("g");
+        }
+        console.log(fn1);
+        fn1();
+
+        // anonymous function :function without a name
+        // hoisting : function can be called before declaration but cannot be used when a function is saved in variable
+
+        const obj={
+            num:2,
+            fun:function(){
+                console.log('h');
+                
+            }
+        };
+        obj.fun();
+
+        // call back function
+        function fname1(para){
+            para();
+        }
+        fname1(function(){
+            console.log("dfjdkf");
+        })
+
+        setTimeout(function() { // run function after 3 sec interval
+            console.log('sanjay');
+            
+        }, 2000);
+        console.log("hi");
+        
+        // setInterval(function()  { // run function for every 3 second
+        //     console.log('sachin');
+        // }, 2000);
+        // console.log("hi");
+
+        ['a','b','c'].forEach(function(value,index){
+            if(value === 'a'){
+                return; // same as continue;
+            }
+            console.log(value);
+            console.log(index);
+        });
+        
+        // arrow function
+        const fun = ()=>{
+            console.log("h");
+        }
+        fun();
+
+        const object1 = {
+            method: ()=>{
+
+            },
+            method2(){
+
+            }
+        };
+        */
+
+    </script>
+</body>                   
+</html>

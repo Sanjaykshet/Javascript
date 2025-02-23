@@ -1,0 +1,16 @@
+body{
+    background-color: black;
+    color: white;
+}
+.img-icon{
+    height: 50px;
+}
+.move-buttons{
+    cursor: pointer;
+    /* background-color: transparent; */
+    border: 2px solid white;
+    border-radius: 40px;
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
+}
