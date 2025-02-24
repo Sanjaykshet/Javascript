@@ -29,7 +29,7 @@
 
 /* This @media means when the screen width is 1600px or
    less, we will divide the grid into 6 columns. */
-@media (max-width: 1600px) {
+ @media (max-width: 1600px) {
   .products-grid {
     grid-template-columns: repeat(6, 1fr);
   }
@@ -136,7 +136,7 @@
 
   display: flex;
   align-items: center;
-  margin-bottom: 8px;
+  margin-bottom: 8px; 
 
   /* At first, the "Added to cart" message will
      be invisible. Use JavaScript to change the
