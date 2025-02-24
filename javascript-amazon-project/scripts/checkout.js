@@ -2,6 +2,12 @@ import { cart,removeFromCart } from "../data/cart.js";
 import { products } from '../data/products.js';
 import { formatCurrency } from "./utils/money.js";
 
+hello();
+const today=dayjs();
+
+const delivarydate = today.add(7, 'days');
+console.log(delivarydate.format('dddd, MMMM D'));
+
 let cartSummary = '';
 cart.forEach((cartItem) => {
   const productId = cartItem.productId;
@@ -105,6 +111,6 @@ document.querySelectorAll('.js-delete-link').forEach((link) => {
     );
 
     container.remove();
-   console.log(container)
+  //  console.log(container)
   });
 });

@@ -66,7 +66,7 @@ function updatecartquatity(){
     document.querySelector('.js-cart-quantity').innerHTML = cartQuantity;
 }
 
-console.log(productsHTML);
+// console.log(productsHTML);
 document.querySelector('.js-products-grid').innerHTML = productsHTML;
 const addbutton=document.querySelectorAll('.js-add-to-cart')
 addbutton.forEach((button)=>{
